@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/18/Hide & Seek Tab.css">
+</head>
+<body>
+    <div class="container d-flex flex-column flex-1 align-items-center justify-content-center">
+        <nav>
+          <ul>
+            <li>
+              <a onclick="addClass(0)" href="#" class="d-flex justify-content-center align-items-center link isActive">
+                <i class="material-icons-outlined">home</i>
+                <span>home</span>
+              </a>
+            </li>
+            <li>
+              <a onclick="addClass(1)" href="#" class="d-flex justify-content-center align-items-center link">
+                <i class="material-icons-outlined">search</i>
+                <span>search</span>
+              </a>
+            </li>
+            <li>
+              <a onclick="addClass(2)" href="#" class="d-flex justify-content-center align-items-center link">
+                <i class="material-icons-outlined">notifications</i>
+                <span>notifications</span>
+              </a>
+            </li>
+            <li>
+              <a onclick="addClass(3)" href="#" class="d-flex justify-content-center align-items-center link">
+                <i class="material-icons-outlined">settings</i>
+                <span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        function addClass(elem) {
+          for (let i = 0; i < elem.length; i++) {
+            elem[i].addEventListener("click", function(e) {
+              const current = this;
+              for (let i = 0; i < elem.length; i++) {
+                if (current !== elem[i]) {
+                  elem[i].classList.remove("isActive");
+                  elem[i].classList.add("notActive");
+                } else {
+                  current.classList.add("isActive");
+                  current.classList.remove("notActive");
+                }
+              }
+              e.preventDefault();
+            });
+          }
+        }
+        addClass(document.querySelectorAll(".link"));
+      </script>
+</body>
+</html>

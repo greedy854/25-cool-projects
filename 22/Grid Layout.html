@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/22/Grid Layout.css">
+    <script src="/22/Grid Layout.js" defer ></script>
+</head>
+<body>
+    <div class="main">
+
+        <div class=grid>
+          <div class=grid__column onclick="openContent('content1')">
+            <input id="tab1" type="radio" name="tabs" checked>
+          <label for="tab1"><i class="fa fa-home fa-lg"></i></label>
+          </div>
+          <div class=grid__column onclick="openContent('content2')">
+            <input id="tab2" type="radio" name="tabs">
+          <label for="tab2"><i class="fa fa-plus fa-lg"></i></label>
+          </div>
+          <div class=grid__column onclick="openContent('content3')">
+            <input id="tab3" type="radio" name="tabs">
+          <label for="tab3"><i class="fa fa-minus fa-lg"></i></label>
+          </div>
+          <div class=grid__column onclick="openContent('content4')">
+            <input id="tab4" type="radio" name="tabs">
+          <label for="tab4"><i class="fa fa-question fa-lg"></i></label>
+          </div>
+        </div>
+        
+        
+        <div class="content">
+          
+                <div id="content1" class="content88 content11">
+                  <p style="padding: 100px; font-size: 48px;">content1</p>
+                </div>
+                <div id="content2" class="content88 content22">
+                  <p style="padding: 100px; font-size: 48px;">content2</p>
+                </div>
+                <div id="content3" class="content88 content33">
+                  <p style="padding: 100px; font-size: 48px;">content3</p>
+                </div>
+                <div id="content4" class="content88 content44">
+                  <p style="padding: 100px; font-size: 48px;">content4</p>
+                </div>
+        </div>
+        
+        
+        </div>
+</body>
+</html>
+
+<!-- TO MAKE THIS WORK CLICK ON THE TOP SO THE NAVBAR -->

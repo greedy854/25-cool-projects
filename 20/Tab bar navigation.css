@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+   margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  
+}
+
+.phone-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 768px;
+  width: 450px;
+  background: #CE93D8;
+  box-sizing: border-box;
+  border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.3);
+  
+  transition: background 0.3s linear;
+}
+
+.tab-nav-container {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 450px;
+  margin: 0;
+  padding: 30px;
+  background: #fff;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  list-style: none;
+ 
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+
+.tab-purple.active {
+  background-color: #CE93D8;
+  color: #4A148C;
+  
+}
+
+.tab-pink.active {
+  background-color: #F8BBD0;
+  color: #880E4F;
+}
+
+.tab-yellow.active {
+  background-color: #FFE082;
+  color: #F57F17;
+}
+
+.tab-teal.active {
+  background-color: #00B8D4;
+  color: #006064;
+}
+
+.tab p {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  max-width: 0;
+ 
+}
+
+.tab.active p {
+  margin-left: 10px;
+  max-width: 200px;
+  transition: max-width 0.4s linear;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -140px;
+  width: 100%;
+  
+  text-align: center;
+  font-size: 240px;
+  color: #fff;
+}
